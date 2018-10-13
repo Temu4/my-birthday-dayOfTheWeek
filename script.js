@@ -8,13 +8,13 @@ function computeBirthdays() {
   var birthday = document.querySelector("#birthday").value;
   
   // birthday is the value of the input field, 
-  // as a string (ex: "1990-5-07")
+  // as a string (ex: "1991-12-04")
   // Let's turn it into a Date object
   var birthdayAsDate = new Date(birthday);
   
-  // Get the month and year (ex: 07 May)
-  var birthdayMonth = birthdayAsDate.getMonth(); // ex: May
-  var birthdayDate  = birthdayAsDate.getDate();   // ex: 07
+  // Get the month and year (ex: 04 December)
+  var birthdayMonth = birthdayAsDate.getMonth(); // ex: December
+  var birthdayDate  = birthdayAsDate.getDate();   // ex: 04
   
 
   var startYear = document.querySelector("#start").value;
@@ -37,12 +37,12 @@ function computeBirthdays() {
 }
 
 function getDayName(dayIndex) {
-  var days = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Черверг', 'Пятница', 'Суббота'];
+  var days = ['Неділля', 'Понеділок', 'Вівторок', 'Середа', 'Червер', 'П\'ятница', 'Субота'];
   return days[dayIndex];
 }
 
 function displayResults(array) {
-  document.querySelector("#results").innerHTML = "<p>Occurences of your Birthday:</p>";
+  document.querySelector("#results").innerHTML = "<p>На такі дні тижня випадав Ваш день народження:</p>";
   
   var table = document.createElement("table");
   var firstRow = table.insertRow();
