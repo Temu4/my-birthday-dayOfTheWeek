@@ -43,7 +43,7 @@ function getDayName(dayIndex) {
 }
 
 function displayResults(array) {
-  document.querySelector("#results").innerHTML = "<p>На такі дні тижня випадав Ваш день народження:</p>";
+  document.querySelector("#results").innerHTML = "<p>На такі дні тижня і таку тількість разів випадав Ваш день народження за вказаний проміжок часу:</p>";
   
   var table = document.createElement("table");
   var firstRow = table.insertRow();
